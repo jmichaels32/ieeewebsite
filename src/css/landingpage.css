@@ -1,0 +1,71 @@
+.landingpage {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.landingpage__intro {
+  height: 95vh;
+  padding-top: 3vh;
+}
+
+.landingpage__intro--navbar {
+  display: flex;
+}
+
+.landingpage__intro--navbar-IEEE {
+  display: flex;
+  width: 10vw;
+  text-align: center;
+  padding: 5px 0;
+  border: solid black 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+.landingpage__intro--navbar-search {
+  display: flex;
+  width: 42vw;
+  padding: 5px 0;
+  padding-left: 3px;
+  border: solid black 1px;
+  border-radius: 40px;
+  align-items: center;
+}
+
+.landingpage__intro--navbar-search-image {
+  flex-grow: 0;
+  height: 25px;
+  padding-left: 10px;
+}
+
+.landingpage__intro--navbar-search-input {
+  flex-grow: 1;
+  padding-left: 10px;
+  margin-right: 15px;
+  background-color: transparent;
+  border: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  outline: none;
+}
+
+.landingpage__intro--navbar-search-input::placeholder {
+  color: #969696;
+}
+
+.landingpage__intro--navbar-other {
+  display: flex;
+  width: 16vw;
+  padding: 5px 0;
+  border: solid black 1px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+}
+
+.landingpage__bottom {
+  background-color: blue;
+}
