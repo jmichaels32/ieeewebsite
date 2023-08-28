@@ -1,2 +1,2 @@
-# ieeewebsite
-Website for Stanford's IEEE Chapter
+# Stanford IEEE Website
+Repository for Stanford's IEEE Chapter website
