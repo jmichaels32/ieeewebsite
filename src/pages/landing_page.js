@@ -14,10 +14,14 @@ function LandingPage() {
       <div className="landingpage__intro">
         <div className="landingpage__intro--navbar">
           <div className="landingpage__intro--navbar-IEEE">
-            <img src={ieee_logo} height="25" alt="IEEE" />
+            <button className="landingpage__intro--navbar-IEEE-button">
+              <img src={ieee_logo} height="25" alt="IEEE" />
+            </button>
           </div>
           <div className="landingpage__intro--navbar-search">
-            <img src={search_icon} className="landingpage__intro--navbar-search-image" height="25" alt="" />
+            <button className="landingpage__intro--navbar-search-image">
+              <img src={search_icon} height="25" alt="" />
+            </button>
             <input type="text" placeholder="Search" className="landingpage__intro--navbar-search-input"/>
           </div>
           <button className="landingpage__intro--navbar-other">
