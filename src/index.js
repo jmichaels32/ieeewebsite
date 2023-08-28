@@ -10,7 +10,7 @@ import Connect from './pages/connect';
 import Events from './pages/events';
 
 // CSS Imports
-import './css/index.css';
+import './scss/index.css';
 
 export default function App() {
   return (

@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import CSS
-import '../css/landingpage.css';
+import '../scss/landingpage.scss';
 
 // Images Imports
 import search_icon from '../images/search_icon.png';
