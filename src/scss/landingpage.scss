@@ -35,6 +35,8 @@
         border: solid black 1px;
         border-radius: 40px;
         align-items: center;
+        background-color: white;
+        z-index: 10;
 
         &-image {
           display: flex;
@@ -71,9 +73,10 @@
         border: solid black 1px;
         align-items: center;
         justify-content: center;
-        background-color: transparent;
+        background-color: white;
         font-family: 'Helvetica Neue', sans-serif;
         font-size: 15px;
+        z-index: 10;
       }
 
       &-other:hover {
@@ -84,6 +87,55 @@
 
     &--navbar > * {
       padding: 3px 0;
+    }
+
+    &--info {
+      position: absolute;
+
+      &-text {
+
+      }
+
+      &-join {
+        display: flex;
+        margin-left: 15vw;
+        margin-top: -15vh;
+        align-items: center;
+        justify-content: center;
+
+        &_image {
+          pointer-events: none;
+        }
+
+        &_image * {
+          pointer-events: visible;
+        }
+
+        &_image stop {
+          transition: .3s ease-out;
+        }
+
+        &_image:hover stop:first-child {
+          stop-color: #54100C;
+        }
+
+        &_image:hover stop:last-child {
+          stop-color: #B83A4B;
+        }
+
+        &_text {
+          position: absolute;
+          z-index: 2;
+          color: white;
+          font-size: 65px;
+          font-weight: 500;
+          pointer-events: none;
+        }
+      }
+
+      &-stanford {
+
+      }
     }
   }
 

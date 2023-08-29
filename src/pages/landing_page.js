@@ -1,5 +1,6 @@
 // General Imports
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Import CSS
 import '../scss/landingpage.scss';
@@ -7,6 +8,7 @@ import '../scss/landingpage.scss';
 // Images Imports
 import search_icon from '../images/search_icon.png';
 import ieee_logo from '../images/ieee_logo.png';
+import { ReactComponent as JoinLogo } from '../images/join_now.svg';
 
 function LandingPage() {
   return (
@@ -35,13 +37,14 @@ function LandingPage() {
           </button>
         </div>
         <div className="landingpage__intro--info">
-          <div id="landingpage__intro--infotext">
+          <div className="landingpage__intro--info-text">
             Info Text
           </div>
-          <div id="landingpage__intro--infojoin">
-            Info Join
+          <div className="landingpage__intro--info-join">
+            <JoinLogo className="landingpage__intro--info-join_image"/>
+            <div className="landingpage__intro--info-join_text"> JOIN <br /> NOW </div>
           </div>
-          <div id="landingpage__intro--infostanford">
+          <div className="landingpage__intro--info-stanford">
             Stanford Logo
           </div>
         </div>
