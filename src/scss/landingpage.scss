@@ -105,6 +105,9 @@
 
         &_image {
           pointer-events: none;
+          z-index: 4;
+          height: auto;
+          width: 45vw;
         }
 
         &_image * {
@@ -112,7 +115,7 @@
         }
 
         &_image stop {
-          transition: .3s ease-out;
+          transition: .4s ease-out;
         }
 
         &_image:hover stop:first-child {
@@ -125,16 +128,26 @@
 
         &_text {
           position: absolute;
-          z-index: 2;
+          z-index: 5;
           color: white;
-          font-size: 65px;
+          font-size: 4vw;
           font-weight: 500;
           pointer-events: none;
+          text-align: center;
         }
       }
 
       &-stanford {
+        position: absolute;
+        z-index: 1;
+        opacity: 30%;
+        margin-left: 47vw;
+        margin-top: -47vh;
+      }
 
+      &-stanford img {
+        height: auto;
+        width: 55vw;
       }
     }
   }
