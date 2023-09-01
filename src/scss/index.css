@@ -4,3 +4,9 @@ body {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
 }
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}

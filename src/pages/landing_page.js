@@ -12,6 +12,9 @@ import stanford_logo from '../images/stanford_logo.png';
 // SVG Imports
 import { ReactComponent as JoinLogo } from '../images/join_now.svg';
 
+// Components Import
+import Circle from '../components/shapes.js';
+
 function LandingPage() {
   return (
     <div className="landingpage">
@@ -40,7 +43,8 @@ function LandingPage() {
         </div>
         <div className="landingpage__intro--info">
           <div className="landingpage__intro--info-text">
-            Info Text
+            <Circle className="landingpage__intro--info-text_circle"/> 
+            <div className="landingpage__intro--info-text_info"> <b>IEEE</b> is the world's largest professional organization dedicated to advancing technology. <br /> <br /> This is <b>Stanford</b>'s chapter.</div>
           </div>
           <div className="landingpage__intro--info-join">
             <JoinLogo className="landingpage__intro--info-join_image"/>
