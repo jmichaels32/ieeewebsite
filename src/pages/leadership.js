@@ -6,7 +6,7 @@ import React from 'react';
 function Leadership() {
   return (
     <div>
-      Something
+      Leadership
     </div>
   );
 }

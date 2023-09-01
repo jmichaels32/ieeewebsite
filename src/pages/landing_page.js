@@ -10,6 +10,8 @@ import ieee_logo from '../images/ieee_logo.png';
 import stanford_logo from '../images/stanford_logo.png';
 import vertical_circuit from '../images/vertical_circuit.jpeg';
 import horizontal_circuit from '../images/horizontal_circuit.jpeg';
+import stanford_scientists from '../images/stanford_scientists.jpeg';
+import ai_error from '../images/ai_error.png';
 
 // SVG Imports
 import { ReactComponent as JoinLogo } from '../images/join_now.svg';
@@ -78,7 +80,16 @@ function LandingPage() {
           <img className="landingpage__bottom--about_imghorizontal" src={horizontal_circuit} alt=""/>
         </div>
         <div className="landingpage__bottom--people">
-          People
+          <div className="landingpage__bottom--people-text">
+            <div className="landingpage__bottom--people-text_title"> Our People </div>
+            <div className="landingpage__bottom--people-text_body"> This club is for you. Whether you’ve just taken your first STEM class or you’re about to start your career, we aim to provide the highest quality opportunities for your time. 
+              Our network spans across all divisions of Stanford and industry. Read about our leadership <a className="landingpage__bottom--people-text_here" href="/Leadership">here</a>.
+            </div>
+          </div>
+          <div className="landingpage__bottom--people-imgwrapper">
+            <img className="landingpage__bottom--people-imgwrapper_scientists" src={stanford_scientists} alt=""/>
+          </div>
+          <img className="landingpage__bottom--people_aierror" src={ai_error} alt=""/>
         </div>
         <div className="landingpage__bottom--join">
           Ready to join?
