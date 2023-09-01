@@ -8,12 +8,15 @@ import '../scss/landingpage.scss';
 import search_icon from '../images/search_icon.png';
 import ieee_logo from '../images/ieee_logo.png';
 import stanford_logo from '../images/stanford_logo.png';
+import vertical_circuit from '../images/vertical_circuit.jpeg';
+import horizontal_circuit from '../images/horizontal_circuit.jpeg';
 
 // SVG Imports
 import { ReactComponent as JoinLogo } from '../images/join_now.svg';
 
 // Components Import
 import Circle from '../components/shapes.js';
+import BubbleButton from '../components/functional.js';
 
 function LandingPage() {
   return (
@@ -57,7 +60,28 @@ function LandingPage() {
       </div>
       <div className="landingpage__bottom">
         <div className="landingpage__bottom--decal">
-          Decal Bottom
+          <div>Stanford University</div>
+          <div>IEEE</div>
+          <div>Stanford, California</div>
+        </div>
+        <div className="landingpage__bottom--about">
+          <div className="landingpage__bottom--about-text">
+            <div> <span className="landingpage__bottom--about-text_about">ABOUT</span> The Institute of Electrical and Electronics Engineers (IEEE) is committed to fostering technological innovation and excellence for the benefit of humanity. Stanford's chapter focuses on cultivating
+              close connections between students, professors, and companies. Events include faculty lunches, VIP company tours, and more. 
+            </div>
+          </div>
+          <div className="landingpage__bottom--about-buttons">
+            <BubbleButton text="Events" link="/Events"/>
+            <BubbleButton text="IEEE" link=""/>
+          </div>
+          <img className="landingpage__bottom--about_imgvertical" src={vertical_circuit} alt=""/>
+          <img className="landingpage__bottom--about_imghorizontal" src={horizontal_circuit} alt=""/>
+        </div>
+        <div className="landingpage__bottom--people">
+          People
+        </div>
+        <div className="landingpage__bottom--join">
+          Ready to join?
         </div>
       </div>
     </div>
