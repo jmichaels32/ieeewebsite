@@ -103,7 +103,7 @@
     &--info {
       width: 100%;
       height: 100%;
-      overflow: hidden;
+      overflow-x: hidden;
 
       &-text {
         display: flex;
@@ -178,14 +178,15 @@
         position: absolute;
         z-index: 1;
         opacity: 30%;
-        margin-left: 50vw;
-        margin-top: 15vh;
+        left: 45vw;
+        top: 15vh;
         overflow: hidden;
+        width: 55vw;
       }
 
       &-stanford img {
         height: auto;
-        width: 55vw;
+        width: 110%;
       }
     }
   }
@@ -196,7 +197,7 @@
     background-color: var(--backgroundgray);
     color: var(--offwhite);
     font-family: 'Libre Caslon Text', serif;
-    height: 300vh; // SWITCH TO AUTO LATER
+    height: auto;
     z-index: 4;
 
     &--decal {
@@ -300,11 +301,68 @@
         z-index: 8;
         margin-top: -20vh;
         margin-left: 5vw;
+        width: 70vw;
       }
     }
 
     &--join {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      color: var(--backgroundgray);
+      background-color: var(--backgroundgray);
 
+      &-bubble {
+        background-color: var(--getinvolvedgray);
+        margin: 0 3vw;
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+        border-radius: 2vw;
+        height: 100%;
+        padding: 4vh 4vw;
+
+        &_text {
+          font-size: 5vw;
+        }
+
+        &_button {
+          border: 1px solid var(--backgroundgray);
+          margin-top: 7vh;
+          font-size: 3vw;
+          padding: 2vh 2vw;
+        }
+
+        &_button:hover {
+          background-color: var(--backgroundgray);
+          color: var(--getinvolvedgray);
+        }
+      }
+
+      &_ribbon1 {
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        right: 20px;
+        pointer-events: none;
+      }
+
+      &_ribbon1 img {
+        margin-top: -20px;
+        height: 120%;
+      }
+
+      &_ribbon2 {
+        position: absolute;
+        overflow: hidden;
+        height: 100%;
+        left: -145px;
+        pointer-events: none;
+      }
+
+      &_ribbon2 img {
+        margin-top: 352px;
+      }
     }
   }
 }

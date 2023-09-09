@@ -12,6 +12,8 @@ import vertical_circuit from '../images/vertical_circuit.jpeg';
 import horizontal_circuit from '../images/horizontal_circuit.jpeg';
 import stanford_scientists from '../images/stanford_scientists.jpeg';
 import ai_error from '../images/ai_error.png';
+import ribbon1 from '../images/ribbon1.png';
+import ribbon2 from '../images/ribbon2.png';
 
 // SVG Imports
 import { ReactComponent as JoinLogo } from '../images/join_now.svg';
@@ -92,7 +94,20 @@ function LandingPage() {
           <img className="landingpage__bottom--people_aierror" src={ai_error} alt=""/>
         </div>
         <div className="landingpage__bottom--join">
-          Ready to join?
+          <div className="landingpage__bottom--join-bubble">
+            <div className="landingpage__bottom--join-bubble_text">
+              Ready to join?
+            </div>
+            <button className="landingpage__bottom--join-bubble_button">
+              Get Involved
+            </button>
+          </div>
+          <div className="landingpage__bottom--join_ribbon1">
+            <img src={ribbon1} alt=""/>
+          </div>
+          <div className="landingpage__bottom--join_ribbon2">
+            <img src={ribbon2} alt=""/>
+          </div>
         </div>
       </div>
     </div>
