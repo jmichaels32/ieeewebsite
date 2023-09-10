@@ -1,0 +1,17 @@
+.bubbleButton {
+  display: flex;
+  background-color: var(--offwhite);
+  color: var(--backgroundgray);
+  font-family: 'Helvetica Neue', sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100vw; // Massive to make sure it's properly rounded
+
+  padding: 2vh 4vw;
+  font-size: 1.3vw;
+  margin-right: 2vw;
+}
+
+.bubbleButton a {
+  text-decoration: none;
+}
