@@ -1,5 +1,5 @@
 // General Imports
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Import CSS
 import '../scss/landingpage.scss';
@@ -23,10 +23,29 @@ import Circle from '../components/shapes.js';
 import BubbleButton from '../components/functional.js';
 
 function LandingPage() {
+  const [showNav, setShowNav] = useState(true);
+
+  useEffect(() => {
+    const navbarHeight = document.querySelector('.landingpage__intro--navbar').offsetHeight * 2;
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+      if (currentScrollY > viewportHeight - navbarHeight) {
+        setShowNav(false);
+      } else {
+        setShowNav(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="landingpage">
       <div className="landingpage__intro">
-        <div className="landingpage__intro--navbar">
+        {showNav && <div className="landingpage__intro--navbar">
           <div className="landingpage__intro--navbar-IEEE">
             <a href="https://www.ieee.org" className="landingpage__intro--navbar-IEEE-button">
               <img src={ieee_logo} height="25" alt="IEEE" />
@@ -47,7 +66,7 @@ function LandingPage() {
           <a href="/Connect" className="landingpage__intro--navbar-other">
             Get Involved
           </a>
-        </div>
+        </div>}
         <div className="landingpage__intro--info">
           <div className="landingpage__intro--info-text">
             <Circle className="landingpage__intro--info-text_circle"/> 
