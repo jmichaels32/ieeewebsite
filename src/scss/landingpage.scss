@@ -17,9 +17,11 @@
   display: flex;
   background-color: white;
   flex-direction: column;
+  width: 100vw;
 
   &__intro {
     height: 98vh;
+    width: 100%;
     padding-top: 2vh;
 
     &--navbar > * {
@@ -126,7 +128,6 @@
 
         &_info {
           position: absolute;
-          text-decoration: underline;
           font-family: "JetBrains Mono", monospace;
           font-size: 2.4vw;
           padding-left: 6vw;
@@ -198,6 +199,7 @@
     color: var(--offwhite);
     font-family: 'Libre Caslon Text', serif;
     height: auto;
+    width: 100%;
     z-index: 4;
 
     &--decal {
@@ -308,7 +310,7 @@
     &--join {
       display: flex;
       flex-direction: column;
-      width: 100vw;
+      //width: 100vw;
       height: 100vh;
       color: var(--backgroundgray);
       background-color: var(--backgroundgray);
