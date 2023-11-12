@@ -12,11 +12,9 @@ const BubbleButton = ({ className, text, link }) => {
   const combinedClassName = `bubbleButton ${className}`;
   
   return (
-    <div className={combinedClassName}>
-      <a href={link}>
-        {text}
-      </a>
-    </div>
+    <a className={combinedClassName} href={link}>
+      {text}
+    </a>
   );
 }
 

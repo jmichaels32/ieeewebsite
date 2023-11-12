@@ -17,12 +17,11 @@
   display: flex;
   background-color: white;
   flex-direction: column;
-  width: 100vw;
+  width: 100svw;
 
   &__intro {
-    height: 98vh;
-    width: 100%;
-    padding-top: 2vh;
+    height: 98svh;
+    padding-top: 2svh;
 
     &--navbar > * {
       padding: 3px 0;
@@ -35,7 +34,7 @@
 
       &-IEEE {
         display: flex;
-        width: 10vw;
+        width: 10svw;
         border: solid black 1px;
         background-color: white;
 
@@ -52,7 +51,7 @@
       
       &-search {
         display: flex;
-        width: 42vw;
+        width: 42svw;
         border: solid black 1px;
         border-radius: 40px;
         align-items: center;
@@ -86,51 +85,50 @@
       &-other {
         background-color: white;
         display: flex;
-        width: 16vw;
+        width: 16svw;
         border: solid black 1px;
         align-items: center;
         justify-content: center;
         font-family: 'Helvetica Neue', sans-serif;
         font-size: 15px;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
       }
 
       &-other:hover {
         background-color: black;
         color: white;
-        cursor: default;
       }
     }
 
     // Info section contains all main landing page information 
     &--info {
-      width: 100%;
-      height: 100%;
-      overflow-x: hidden;
 
       &-text {
         display: flex;
         position: absolute;
         align-items: center;
         justify-content: center;
-        width: 45vw;
-        height: 45vw;
-        margin-left: -4vw;
-        margin-top: 28vh;
+        width: 45svw;
+        height: 45svw;
+        margin-left: -4svw;
+        margin-top: 28svh;
         z-index: 3;
 
         &_circle {
           position: absolute;
-          overflow: hidden;
+          //overflow: hidden;
           background-color: white;
-          width: 45vw;
-          height: 45vw;
+          width: 45svw;
+          height: 45svw;
         }
 
         &_info {
           position: absolute;
           font-family: "JetBrains Mono", monospace;
-          font-size: 2.4vw;
-          padding-left: 6vw;
+          font-size: 2.4svw;
+          padding-left: 6svw;
         }
       }
 
@@ -198,8 +196,6 @@
     background-color: var(--backgroundgray);
     color: var(--offwhite);
     font-family: 'Libre Caslon Text', serif;
-    height: auto;
-    width: 100%;
     z-index: 4;
 
     &--decal {
@@ -207,7 +203,7 @@
       justify-content: space-between;
       padding: 0 1.4vw;
       padding-top: 0.5vw;
-      margin-bottom: 20vh;
+      margin-bottom: 20svh;
       font-size: 1.2vw;
     }
 
@@ -231,6 +227,10 @@
           font-size: 1.7vw;
           letter-spacing: 1px;
           font-family: 'Helvetica Neue', sans-serif;
+          background: -webkit-linear-gradient(45deg, #840000, #FF0000);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
 
@@ -280,8 +280,29 @@
 
         &_here {
           color: var(--offwhite);
-          text-decoration: none;
+          transition: color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), text-shadow 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+          text-shadow: 0px 0px 0px var(--offwhite);
+          &:hover {
+            color: #ba0202;
+            text-shadow: 0px 0px 10px var(--cardinalred);
+          }
+          // An alternative to filling in the color
+          /*
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-image: linear-gradient(
+              to right,
+              var(--cardinalred),
+              red 50%,
+              var(--offwhite) 50%);
+              background-size: 200% 100%;
+              background-position: 100%;*/
         }
+        /*
+        &_here:hover {
+          background-position: 0%;
+        }*/
       }
 
       &-imgwrapper {
@@ -310,8 +331,7 @@
     &--join {
       display: flex;
       flex-direction: column;
-      //width: 100vw;
-      height: 100vh;
+      height: 100svh;
       color: var(--backgroundgray);
       background-color: var(--backgroundgray);
 
@@ -326,13 +346,16 @@
 
         &_text {
           font-size: 5vw;
+          margin-bottom: 5svh;
         }
 
         &_button {
           border: 1px solid var(--backgroundgray);
-          margin-top: 7vh;
+          margin-top: 7svh;
           font-size: 3vw;
           padding: 2vh 2vw;
+          text-decoration: none;
+          color: var(--backgroundgray);
         }
 
         &_button:hover {

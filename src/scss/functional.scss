@@ -1,28 +1,23 @@
 .bubbleButton {
   display: flex;
   background-color: var(--offwhite);
+  color: var(--backgroundgray);
   font-family: 'Helvetica Neue', sans-serif;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
   border-radius: 100vw; // Massive to make sure it's properly rounded
+  text-shadow: 0px 0px 0px var(--backgroundgray);
 
-  padding: 2vh 4vw;
+  padding: 20px 4vw;
   font-size: 1.3vw;
   margin-right: 2vw;
-  transition: background-color 0.5s ease-out;
+  transition: color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), text-shadow 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .bubbleButton:hover {
   background-color: #820000;
-}
-
-.bubbleButton:hover a {
   color: var(--offwhite);
-}
-
-.bubbleButton a {
-  text-decoration: none;
-  color: var(--backgroundgray);
-  transition: color 0.5s ease-out;
+  text-shadow: 0px 0px 10px var(--offwhite);
 }

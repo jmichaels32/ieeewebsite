@@ -28,9 +28,9 @@ function LandingPage() {
       <div className="landingpage__intro">
         <div className="landingpage__intro--navbar">
           <div className="landingpage__intro--navbar-IEEE">
-            <button className="landingpage__intro--navbar-IEEE-button">
+            <a href="https://www.ieee.org" className="landingpage__intro--navbar-IEEE-button">
               <img src={ieee_logo} height="25" alt="IEEE" />
-            </button>
+            </a>
           </div>
           <div className="landingpage__intro--navbar-search">
             <button className="landingpage__intro--navbar-search-image">
@@ -38,15 +38,15 @@ function LandingPage() {
             </button>
             <input type="text" placeholder="Search" className="landingpage__intro--navbar-search-input"/>
           </div>
-          <button className="landingpage__intro--navbar-other">
+          <a href="/Leadership" className="landingpage__intro--navbar-other">
             About
-          </button>
-          <button className="landingpage__intro--navbar-other">
+          </a>
+          <a href="/Leadership" className="landingpage__intro--navbar-other">
             People
-          </button>
-          <button className="landingpage__intro--navbar-other">
+          </a>
+          <a href="/Connect" className="landingpage__intro--navbar-other">
             Get Involved
-          </button>
+          </a>
         </div>
         <div className="landingpage__intro--info">
           <div className="landingpage__intro--info-text">
@@ -76,7 +76,7 @@ function LandingPage() {
           </div>
           <div className="landingpage__bottom--about-buttons">
             <BubbleButton text="Events" link="/Events"/>
-            <BubbleButton text="IEEE" link=""/>
+            <BubbleButton text="IEEE" link="https://www.ieee.org"/>
           </div>
           <img className="landingpage__bottom--about_imgvertical" src={vertical_circuit} alt=""/>
           <img className="landingpage__bottom--about_imghorizontal" src={horizontal_circuit} alt=""/>
@@ -98,9 +98,9 @@ function LandingPage() {
             <div className="landingpage__bottom--join-bubble_text">
               Ready to join?
             </div>
-            <button className="landingpage__bottom--join-bubble_button">
+            <a href="/Connect" className="landingpage__bottom--join-bubble_button">
               Get Involved
-            </button>
+            </a>
           </div>
           <div className="landingpage__bottom--join_ribbon1">
             <img src={ribbon1} alt=""/>

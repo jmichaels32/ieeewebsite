@@ -2,6 +2,7 @@
 import React from 'react';
 
 // Import CSS
+import '../scss/leadership.scss';
 
 function Leadership() {
   return (
