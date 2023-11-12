@@ -1,0 +1,34 @@
+.leadership {
+  background-color: var(--backgroundgray);
+  padding-bottom: 10svh;
+
+  &__profilepane {
+    display: flex;
+    padding-bottom: 20svh;
+
+    &-background {
+      margin-top: -13svh;
+      height: 60svh;
+      object-fit: cover;
+      position: absolute;
+    }
+  }
+  
+  &__return {
+    display: flex;
+    color: var(--offwhite);
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid var(--offwhite);
+    width: 30%;
+    padding: 5svh;
+    margin: 0 auto;
+    border-radius: 100svw;
+    font-size: 2em;
+    
+    &:hover {
+      background-color: var(--offwhite);
+      color: var(--backgroundgray);
+    }
+  }
+}

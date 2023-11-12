@@ -20,7 +20,7 @@ import { ReactComponent as JoinLogo } from '../images/join_now.svg';
 
 // Components Import
 import Circle from '../components/shapes.js';
-import BubbleButton from '../components/functional.js';
+import { BubbleButton } from '../components/functional.js';
 
 function LandingPage() {
   const [showNav, setShowNav] = useState(true);
