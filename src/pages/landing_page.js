@@ -47,7 +47,7 @@ function LandingPage() {
       <div className="landingpage__intro">
         {showNav && <div className="landingpage__intro--navbar">
           <div className="landingpage__intro--navbar-IEEE">
-            <a href="https://www.ieee.org" className="landingpage__intro--navbar-IEEE-button">
+            <a href="/" className="landingpage__intro--navbar-IEEE-button">
               <img src={ieee_logo} height="25" alt="IEEE" />
             </a>
           </div>

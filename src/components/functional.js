@@ -1,9 +1,10 @@
 // General Imports
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Import CSS
 import '../scss/landingpage.scss';
 import '../scss/functional.scss';
+import '../scss/connect.scss';
 
 // Import images
 import defaultProfileImage from '../images/profile_default.png'
@@ -38,6 +39,29 @@ const ProfileCard = ({ photoPath, name, description}) => {
   );
 }
 
-export { BubbleButton, ProfileCard };
+const ConnectCard = ({ logo, style, textcolor, content }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
+  return (
+    <div 
+      className={`connect_panel-pane${isFlipped ? ' flipped' : ''}`} 
+      style={style}
+      onClick={handleClick}
+    >
+      <div className="connect_panel-pane-front">
+        <img src={logo} height="20%" alt={content} />
+      </div>
+      <div className="connect_panel-pane-back">
+        <p style={{color: textcolor}}>{content}</p>
+      </div>
+    </div>
+  );
+}
+
+export { BubbleButton, ProfileCard, ConnectCard };
 
 
