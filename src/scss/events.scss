@@ -1,0 +1,28 @@
+.events {
+
+  &-navbar {
+    padding-top: 3svh;
+  }
+
+  &__content {
+    font-family: 'Libre Caslon Text', serif;
+    width: 60svw;
+    height: 70svh;
+    border: 2px solid black;
+    margin-top: 25svh;
+    margin-left: 15svw;
+    position: absolute;
+    color: var(--cardinalred);
+
+    &-text {
+      font-size: 11vw;
+      margin-top: -13vh;
+      margin-left: 25svw;
+      line-height: 0.9;
+
+      &__events {
+        padding-left: 15svw;
+      }
+    }
+  }
+}

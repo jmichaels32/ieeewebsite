@@ -57,7 +57,7 @@ function LandingPage() {
             </button>
             <input type="text" placeholder="Search" className="landingpage__intro--navbar-search-input"/>
           </div>
-          <a href="/Leadership" className="landingpage__intro--navbar-other">
+          <a href="https://www.ieee.org" className="landingpage__intro--navbar-other">
             About
           </a>
           <a href="/Leadership" className="landingpage__intro--navbar-other">

@@ -2,6 +2,7 @@
 import React from 'react';
 
 // Import CSS
+import '../scss/landingpage.scss';
 import '../scss/functional.scss';
 
 // Import images

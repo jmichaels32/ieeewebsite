@@ -13,7 +13,13 @@ body {
   --backgroundgray: #1F1F1F;
   --offwhite: #E3E3E3;
   --getinvolvedgray: #BBB8B4;
+
+  /* Red Colors */
   --cardinalred: #820000;
+  --lightercardinalred: #8f1a1a;
+  --lightestcardinalred: #a84d4d;
+  --darkercardinalred: #680000;
+  --darkestcardinalred: #5b0000;
 }
 
 button {
