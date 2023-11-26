@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/stanfordieee.github.io/static/css/main.9e06996b.css",
+    "main.js": "/stanfordieee.github.io/static/js/main.2d43d2da.js",
+    "static/js/787.935cd0a5.chunk.js": "/stanfordieee.github.io/static/js/787.935cd0a5.chunk.js",
+    "static/media/join_now.svg": "/stanfordieee.github.io/static/media/join_now.19b5648379b58477e935dc000e49885b.svg",
+    "static/media/ribbon1.png": "/stanfordieee.github.io/static/media/ribbon1.63241de8d9db611b92dc.png",
+    "static/media/horizontal_circuit.jpeg": "/stanfordieee.github.io/static/media/horizontal_circuit.8605dc666c53abc1906e.jpeg",
+    "static/media/vertical_circuit.jpeg": "/stanfordieee.github.io/static/media/vertical_circuit.1e78d01bca74bc72d723.jpeg",
+    "static/media/stanford_scientists.jpeg": "/stanfordieee.github.io/static/media/stanford_scientists.dcaab685b96a79e4a507.jpeg",
+    "static/media/outlook.png": "/stanfordieee.github.io/static/media/outlook.400cc1203e4c03024d20.png",
+    "static/media/stanford_logo.png": "/stanfordieee.github.io/static/media/stanford_logo.fc4ddc33a5a44629b94d.png",
+    "static/media/ribbon2.png": "/stanfordieee.github.io/static/media/ribbon2.a6ff140c56f689810cc1.png",
+    "static/media/leadership_text_background.png": "/stanfordieee.github.io/static/media/leadership_text_background.dc79c53fba2d4c47de9d.png",
+    "static/media/slack.png": "/stanfordieee.github.io/static/media/slack.566a720fce6f2901700a.png",
+    "static/media/ai_error.png": "/stanfordieee.github.io/static/media/ai_error.2df43a09518e426b69dc.png",
+    "static/media/instagram.png": "/stanfordieee.github.io/static/media/instagram.afe0c8f246d312301460.png",
+    "index.html": "/stanfordieee.github.io/index.html",
+    "main.9e06996b.css.map": "/stanfordieee.github.io/static/css/main.9e06996b.css.map",
+    "main.2d43d2da.js.map": "/stanfordieee.github.io/static/js/main.2d43d2da.js.map",
+    "787.935cd0a5.chunk.js.map": "/stanfordieee.github.io/static/js/787.935cd0a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e06996b.css",
+    "static/js/main.2d43d2da.js"
+  ]
+}
