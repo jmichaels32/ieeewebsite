@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 // Import Various Pages
@@ -14,14 +14,14 @@ import './scss/index.css';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/Leadership" element={<Leadership />} />
-        <Route path="/Connect" element={<Connect />} />
-        <Route path="/Events" element={<Events />} />
+        <Route path="/leadership" element={<Leadership />} />
+        <Route path="/connect" element={<Connect />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 

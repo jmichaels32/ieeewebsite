@@ -1,5 +1,6 @@
 // General Imports
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 // Import CSS
 import '../scss/landingpage.scss';
@@ -47,9 +48,9 @@ function LandingPage() {
       <div className="landingpage__intro">
         {showNav && <div className="landingpage__intro--navbar">
           <div className="landingpage__intro--navbar-IEEE">
-            <a href="/" className="landingpage__intro--navbar-IEEE-button">
+            <Link to="/" className="landingpage__intro--navbar-IEEE-button">
               <img src={ieee_logo} height="25" alt="IEEE" />
-            </a>
+            </Link>
           </div>
           <div className="landingpage__intro--navbar-search">
             <button className="landingpage__intro--navbar-search-image">
@@ -57,15 +58,15 @@ function LandingPage() {
             </button>
             <input type="text" placeholder="Search" className="landingpage__intro--navbar-search-input"/>
           </div>
-          <a href="https://www.ieee.org" className="landingpage__intro--navbar-other">
+          <Link to="https://www.ieee.org" className="landingpage__intro--navbar-other">
             About
-          </a>
-          <a href="/Leadership" className="landingpage__intro--navbar-other">
+          </Link>
+          <Link to="/leadership" className="landingpage__intro--navbar-other">
             People
-          </a>
-          <a href="/Connect" className="landingpage__intro--navbar-other">
+          </Link>
+          <Link to="/connect" className="landingpage__intro--navbar-other">
             Get Involved
-          </a>
+          </Link>
         </div>}
         <div className="landingpage__intro--info">
           <div className="landingpage__intro--info-text">
@@ -94,7 +95,7 @@ function LandingPage() {
             </div>
           </div>
           <div className="landingpage__bottom--about-buttons">
-            <BubbleButton text="Events" link="/Events"/>
+            <BubbleButton text="Events" link="/events"/>
             <BubbleButton text="IEEE" link="https://www.ieee.org"/>
           </div>
           <img className="landingpage__bottom--about_imgvertical" src={vertical_circuit} alt=""/>
@@ -104,7 +105,7 @@ function LandingPage() {
           <div className="landingpage__bottom--people-text">
             <div className="landingpage__bottom--people-text_title"> Our People </div>
             <div className="landingpage__bottom--people-text_body"> This club is for you. Whether you’ve just taken your first STEM class or you’re about to start your career, we aim to provide the highest quality opportunities for your time. 
-              Our network spans across all divisions of Stanford and industry. Read about our leadership <a className="landingpage__bottom--people-text_here" href="/Leadership">here</a>.
+              Our network spans across all divisions of Stanford and industry. Read about our leadership <Link className="landingpage__bottom--people-text_here" to="/leadership">here</Link>.
             </div>
           </div>
           <div className="landingpage__bottom--people-imgwrapper">
@@ -117,9 +118,9 @@ function LandingPage() {
             <div className="landingpage__bottom--join-bubble_text">
               Ready to join?
             </div>
-            <a href="/Connect" className="landingpage__bottom--join-bubble_button">
+            <Link to="/connect" className="landingpage__bottom--join-bubble_button">
               Get Involved
-            </a>
+            </Link>
           </div>
           <div className="landingpage__bottom--join_ribbon1">
             <img src={ribbon1} alt=""/>

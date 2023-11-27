@@ -1,5 +1,6 @@
 // General Imports
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 // Import CSS
 import '../scss/landingpage.scss';
@@ -17,9 +18,9 @@ const BubbleButton = ({ className, text, link }) => {
   const combinedClassName = `bubbleButton ${className}`;
   
   return (
-    <a className={combinedClassName} href={link}>
+    <Link className={combinedClassName} to={link}>
       {text}
-    </a>
+    </Link>
   );
 }
 
